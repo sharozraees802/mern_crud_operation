@@ -10,6 +10,12 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+
+//this two line is .env to add
+//ATLAS_URI=mongodb+srv://sharoz:sharozkhan007@cluster0.ibezu.mongodb.net/MernCrudOperation?retryWrites=true&w=majority
+//MOGOOSEDB_URI =mongodb://localhost:27017/MernCrudOperation
+
+
 //const uri = process.env.ATLAS_URI;
 //const uri = process.env.MOGOOSEDB_URI;
 mongoose.connect('mongodb+srv://sharoz:sharozkhan007@cluster0.ibezu.mongodb.net/MernCrudOperation?retryWrites=true&w=majority', { useNewUrlParser: true,
