@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 //const uri = process.env.ATLAS_URI;
-const uri = process.env.MOGOOSEDB_URI;
-mongoose.connect(uri, { useNewUrlParser: true,
+//const uri = process.env.MOGOOSEDB_URI;
+mongoose.connect('mongodb+srv://sharoz:sharozkhan007@cluster0.ibezu.mongodb.net/MernCrudOperation?retryWrites=true&w=majority', { useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true }
 ).then(() => {
